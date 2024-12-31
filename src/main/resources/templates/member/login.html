@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>로그인 - COMMUNITY</title>
-    <link rel="stylesheet" href="/css/common.css" />
-    <link rel="stylesheet" href="/css/member/login.css" />
-    <script defer src="/js/member/login.js"></script>
+    <link rel="stylesheet" th:href="@{/css/common.css}" />
+    <link rel="stylesheet" th:href="@{/css/fragments/header.css}" />
+    <link rel="stylesheet" th:href="@{/css/fragments/footer.css}" />
+    <link rel="stylesheet" th:href="@{/css/member/login.css}" />
+    <script defer th:src="@{/js/member/login.js}"></script>
   </head>
   <body>
-    <header class="header">
-      <!-- header.html 내용 -->
-    </header>
+  <header class="header" th:include="~{fragments/header::header}">
+    <!-- header.html 내용 -->
+  </header>
 
     <main>
       <div class="container">
@@ -49,8 +51,8 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <!-- footer.html 내용 -->
-    </footer>
+  <footer class="footer" th:include="~{fragments/footer::footer}">
+    <!-- footer.html 내용 -->
+  </footer>
   </body>
 </html>
