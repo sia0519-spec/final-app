@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글 수정 - 자유게시판</title>
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/board/free/write.css" />
+    <script defer src="/js/board/free/modify.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <!-- header.html 내용 -->
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="write-wrapper">
+          <h2 class="write-title">글 수정</h2>
+
+          <form class="write-form" action="/board/free/modify" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id" value="1" />
+
+            <div class="input-group">
+              <input type="text" name="title" class="input-field" placeholder="제목을 입력하세요" required value="기존 게시글 제목" />
+            </div>
+
+            <div class="input-group">
+              <textarea name="content" class="textarea-field" placeholder="내용을 입력하세요" required>기존 게시글 내용</textarea>
+            </div>
+
+            <div class="input-group">
+              <div class="image-upload">
+                <div class="upload-box">
+                  <input type="file" name="image" id="imageInput" class="file-input" accept="image/*" />
+                  <label for="imageInput" class="upload-label">
+                    <div class="upload-icon">📷</div>
+                    <span class="upload-text">이미지를 선택하세요</span>
+                  </label>
+                </div>
+                <div id="imagePreview" class="image-preview" style="display: none">
+                  <img src="" alt="미리보기 이미지" />
+                  <button type="button" class="remove-image">✕</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-group">
+              <button type="submit" class="submit-btn">수정</button>
+              <button type="button" class="cancel-btn" onclick="history.back()">취소</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- footer.html 내용 -->
+    </footer>
+  </body>
+</html>

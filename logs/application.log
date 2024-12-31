@@ -1,0 +1,23 @@
+2024-12-31T11:53:05.518+09:00  INFO 5444 --- [final-app] [restartedMain] c.example.finalapp.FinalAppApplication   : Starting FinalAppApplication using Java 21.0.5 with PID 5444 (D:\0900_gb_rsa\spring\workspace\final-app\build\classes\java\main started by Administrator in D:\0900_gb_rsa\spring\workspace\final-app)
+2024-12-31T11:53:05.522+09:00  INFO 5444 --- [final-app] [restartedMain] c.example.finalapp.FinalAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-12-31T11:53:05.547+09:00  INFO 5444 --- [final-app] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc11\23.5.0.24.07\6e07003d57be5e280ef0492209e20fa27edec5b6\ojdbc11-23.5.0.24.07.jar referenced one or more files that do not exist: file:/C:/Users/Administrator/.gradle/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc11/23.5.0.24.07/6e07003d57be5e280ef0492209e20fa27edec5b6/oraclepki.jar
+2024-12-31T11:53:05.548+09:00  INFO 5444 --- [final-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-31T11:53:05.548+09:00  INFO 5444 --- [final-app] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-31T11:53:05.857+09:00 DEBUG 5444 --- [final-app] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2024-12-31T11:53:05.857+09:00 DEBUG 5444 --- [final-app] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.example.finalapp'
+2024-12-31T11:53:05.930+09:00 DEBUG 5444 --- [final-app] [restartedMain] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2024-12-31T11:53:05.932+09:00  WARN 5444 --- [final-app] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.finalapp]' package. Please check your configuration.
+2024-12-31T11:53:06.159+09:00  INFO 5444 --- [final-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 10000 (http)
+2024-12-31T11:53:06.167+09:00  INFO 5444 --- [final-app] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-31T11:53:06.168+09:00  INFO 5444 --- [final-app] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-31T11:53:06.195+09:00  INFO 5444 --- [final-app] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-31T11:53:06.195+09:00  INFO 5444 --- [final-app] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 647 ms
+2024-12-31T11:53:06.257+09:00  INFO 5444 --- [final-app] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-12-31T11:53:06.430+09:00 DEBUG 5444 --- [final-app] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2024-12-31T11:53:06.465+09:00 DEBUG 5444 --- [final-app] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Property 'mapperLocations' was not specified.
+2024-12-31T11:53:06.528+09:00  INFO 5444 --- [final-app] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-31T11:53:06.548+09:00  INFO 5444 --- [final-app] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 10000 (http) with context path '/'
+2024-12-31T11:53:06.554+09:00  INFO 5444 --- [final-app] [restartedMain] c.example.finalapp.FinalAppApplication   : Started FinalAppApplication in 1.278 seconds (process running for 1.644)
+2024-12-31T11:53:09.299+09:00  INFO 5444 --- [final-app] [http-nio-10000-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-31T11:53:09.299+09:00  INFO 5444 --- [final-app] [http-nio-10000-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-31T11:53:09.300+09:00  INFO 5444 --- [final-app] [http-nio-10000-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

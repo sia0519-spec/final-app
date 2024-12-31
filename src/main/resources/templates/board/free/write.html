@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글쓰기 - 자유게시판</title>
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/board/free/write.css" />
+    <script defer src="/js/board/free/write.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <!-- header.html 내용 -->
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="write-wrapper">
+          <h2 class="write-title">글쓰기</h2>
+
+          <form class="write-form" action="/board/free/write" method="post" enctype="multipart/form-data">
+            <!-- 파일 첨부를 위해서는 method는 post -->
+            <!-- enctype은 multipart/form-data 로 설정해야 함! -->
+            <div class="input-group">
+              <input type="text" name="title" class="input-field" placeholder="제목을 입력하세요" required />
+            </div>
+
+            <div class="input-group">
+              <textarea name="content" class="textarea-field" placeholder="내용을 입력하세요" required></textarea>
+            </div>
+
+            <div class="input-group">
+              <div class="image-upload">
+                <div class="upload-box">
+                  <input type="file" name="image" id="imageInput" class="file-input" accept="image/*" />
+                  <label for="imageInput" class="upload-label">
+                    <div class="upload-icon">📷</div>
+                    <span class="upload-text">이미지를 선택하세요</span>
+                  </label>
+                </div>
+                <div id="imagePreview" class="image-preview" style="display: none">
+                  <img src="" alt="미리보기 이미지" />
+                  <button type="button" class="remove-image">✕</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-group">
+              <button type="submit" class="submit-btn">등록</button>
+              <button type="button" class="cancel-btn" onclick="history.back()">취소</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- footer.html 내용 -->
+    </footer>
+  </body>
+</html>
